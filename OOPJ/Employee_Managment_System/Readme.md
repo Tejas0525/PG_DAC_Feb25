@@ -7,6 +7,7 @@ emp : id,name,salary,address and contact
 
 Company class:
 this class contain main method and input for employee details
+after every input sc.nextLine() used to counsume "\n" after input entered.
 then call show mwthod to display all the details.
 
 This code is written by Tejas Patil_JH
