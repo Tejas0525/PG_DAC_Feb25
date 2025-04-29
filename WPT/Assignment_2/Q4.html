@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.4</title>
+    <link rel="stylesheet" href="Css/Q4.css"/>
+</head>
+
+<body>
+    <div class="main-container">
+        <p class="link-hover" id="link-hover">
+            [<u>On mouse over here bold words of the following paragraph will be highlighted</u>]
+        </p>
+        <p class="para-container">
+            We have just started <span class="hidden">this</span> section for the users (<span
+                class="hidden">beginner</span>
+            to intermediate) who <span class="hidden">want</span> to work with <span class="hidden">various</span>
+            JavaScript <span class="hidden">problems</span> and write scripts online to <span class="hidden">test</span>
+            their
+            JavaScript <span class="hidden">skill</span>.
+        </p>
+    </div>
+
+    <script>
+        const collection = document.getElementsByClassName("hidden");
+        for (let i = 0; i < collection.length; i++) {
+            collection[i].style.color = "white";
+        }
+
+        document.getElementById("link-hover").onmouseover = function () {
+            for (let i = 0; i < collection.length; i++) {
+                collection[i].style.color = "blue";
+            }
+        }
+
+
+        document.getElementById("link-hover").onmouseleave = function () {
+            for (let i = 0; i < collection.length; i++) {
+                collection[i].style.color = "white";
+            }
+        }
+    </script>
+</body>
+
+</html>

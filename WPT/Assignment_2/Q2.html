@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Q2.css">
+    <title>Q2</title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <form id="userForm">
+            <div class="form-container">
+            <div><b>First Name: </b><input type="text" id="fname" placeholder="Enter first name"></div>
+            <div><b>Last Name: </b><input type="text" id="lname" placeholder="Enter last name"></div>
+            <div><b>Contact: </b><input type="text" id="contact" placeholder="Enter mobile number"></div>
+            <div><b>Email: </b><input type="email" id="email" placeholder="Enter email"></div>
+            <button type="button" id="submit-btn">Submit</button>
+            </div>
+        </form>
+        <div id="output"><b>Output: </b></div>
+    </div>
+    <script>
+            
+            document.getElementById("submit-btn").onclick = function(){
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let email = document.getElementById("email").value;
+            let contact = document.getElementById("contact").value;
+
+            var output = `
+                <p><b>First Name: </b>${fname}</p>
+                <p><b>Last Name: </b>${lname}</p>
+                <p><b>Contact: <b>${contact}</p>
+                <p><b>Email: </b>${email}</p>
+            `;
+            document.getElementById('output').innerHTML = output;         
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Q1.css">
+    <title>Q-1 </title>
+</head>
+
+<body>
+    <div class="main-container">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur a exercitationem eum voluptatem
+            aspernatur cum tenetur eveniet eos! Autem porro amet nisi. Exercitationem perspiciatis id molestias? Fuga
+            officiis eaque molestiae quibusdam ea illum ut, quia debitis animi! Voluptatibus deleniti earum repellendus
+            nobis vero aut nemo unde sapiente totam possimus tenetur omnis quas, impedit non aperiam asperiores sequi
+            corrupti quia voluptas inventore autem repudiandae nesciunt ullam. Porro quam dolore fugiat commodi magni quidem
+            iusto, laboriosam, facere nisi obcaecati aspernatur. Doloremque, nesciunt quasi. Perspiciatis nihil
+            exercitationem nisi veniam ex ducimus accusamus hic facilis. Recusandae totam officia soluta fuga, asperiores,
+            unde perspiciatis odio explicabo harum voluptatum quam placeat quia in? Excepturi, nulla expedita hic cumque
+            nobis laudantium at dolor dignissimos eos molestias fuga consequatur? Aspernatur autem debitis soluta commodi
+            quisquam quia doloremque ad ea sint fugiat nemo fugit error nam, possimus adipisci aperiam corporis eos ut sunt
+            quis nobis, ipsa praesentium. Quas porro error modi architecto ut. Eum quos labore saepe recusandae
+            exercitationem, soluta minus? Error illum dolorem exercitationem fugit! Accusantium libero ad ex quibusdam
+            impedit voluptatem quaerat dignissimos debitis possimus repudiandae nisi porro dicta voluptatibus sapiente
+            quidem ea, doloribus aspernatur reprehenderit? Nulla officiis ipsa impedit dolores neque perferendis optio
+            beatae laboriosam.
+        </p>
+        <button id="submit-btn" >Submit</button>
+    </div>
+    <script>
+        i=0;
+        while(i<10){
+        document.getElementById('submit-btn').onclick = function(){
+            let colorG =Math.floor(Math.random() * 16777215).toString(16);
+            document.getElementById('para').style.color ='#' + colorG;
+            document.getElementById('submit-btn').style.color ='#' + colorG;
+            document.getElementById('para').style.font ='x-large';
+            document.getElementById('para').style.fontFamily ='algerian';
+        }
+        i++;
+    }
+    </script>
+</body>
+</html>

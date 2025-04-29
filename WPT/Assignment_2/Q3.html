@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <link rel="stylesheet" href="Css/Q3.css">
+</head>
+<body>
+    <div class="main-container">
+    <select class="options-menu" id="options-menu">
+       <option value="1">Apple</option>
+       <option value="2">Watermelon</option>
+       <option value="3">Almond</option>
+       <option value="4">Grapes</option>
+    </select>
+    <div class="remove-btn">
+        <button id="remove-btn" type="button" onclick="removeItem()">Remove</button>
+    </div>
+    </div>
+    <script>
+       function removeItem() {
+        var x = document.getElementById("options-menu");
+        x.remove(x.selectedIndex);
+    }
+    </script>
+</body>
+</html>
