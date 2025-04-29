@@ -1,0 +1,42 @@
+
+body{
+    background-color: rgba(248, 191, 191, 0.784); 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+      
+}
+.main-container{
+    margin: 20% auto ;
+    box-shadow:
+    
+}
+.options-menu{
+    width: 300px;
+    height: 80px;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(208, 156, 215, 0.604);
+}
+.options-menu:hover{
+    background-color: azure;
+    cursor: pointer;
+}
+#remove-btn{
+    font-size: medium;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(235, 134, 134);
+}
+#remove-btn:hover{
+    background-color: azure;
+}
+option{
+    background-color: white;
+    color: black;
+}

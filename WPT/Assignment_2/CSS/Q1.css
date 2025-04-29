@@ -1,0 +1,30 @@
+*{
+    align-items: center;
+}
+body{
+    background-color: rgb(207, 209, 209);
+}
+.main-container{
+    align-content: center;
+    align : center;
+    text-align: justify;
+    padding: 30px 30px;
+    background-color: rgba(247, 240, 240, 0.932) ;
+    margin: 180px 280px;
+    justify-content: center;
+    display: flex ;
+    flex-direction: column;
+    height: 300px;
+}
+p{
+    font-size: 17px;
+}
+
+#submit-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: whitesmoke; 
+    width : 150px;
+    height: 80px;
+    
+}
