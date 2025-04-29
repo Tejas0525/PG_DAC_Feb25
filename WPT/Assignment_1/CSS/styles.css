@@ -1,0 +1,39 @@
+body{
+    margin: 20px;
+}
+p{
+    text-align: justify;
+}
+h2{
+    color: rgb(182, 100, 0);
+}
+#main{
+    display: flex;
+    padding: 20px 20px;
+}
+#name{
+    display: block;
+    background-color: darkorange;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+#left{
+    flex: 2;
+    padding: 15px;
+    background-color: gold;
+    border: 2px solid black;
+    height: auto;
+}
+#photo{
+    border: 2px solid black;
+    border-radius: 50% 2px;
+    width: 200px;
+    height: auto;
+}
+#right{
+    flex: 1;
+    padding: 15px;
+    background-color: lightgrey;
+    height: auto;
+}
