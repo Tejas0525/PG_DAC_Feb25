@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1-Callback func</title>
+</head>
+<body>
+    <script>
+        function toUpperCase(str){
+            return str.toUpperCase(str);
+        }
+        function processData(inputStr,func){
+            const result = func(inputStr);
+            console.log("ProcessData : " +result);
+        }
+        processData("Tejas",toUpperCase)
+    </script>
+</body>
+</html>
